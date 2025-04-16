@@ -1,4 +1,5 @@
 
+import React from "react"
 import  MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter"
@@ -26,9 +27,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
             <div className={`${flexBetween} mx-auto w-5/6`}>
                 <div className={`${flexBetween} w-full gap-16`}>
-                  <div className="flex">
+                  <div className="flex text-lg font-bold">
                     SQgym
-                  <FitnessCenterIcon />
+                    <FitnessCenterIcon className="text-amber-400"/>
                   </div>
                   {isAboveMediumsScreens ? (
                     <div className={`${flexBetween} w-full`}>
@@ -70,11 +71,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
             {/* Close icon */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <CloseIcon className="h-6 w-6 text-red-400"/>
+                <CloseIcon className="h-6 w-6 text-gray-700"/>
               </button>
             </div>
             {/* Menu Items */}
-            <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+            <div className="ml-[33%] flex flex-col gap-10 text-lg">
                         <Link page="Home" selectedPage={selectedPage} 
                         setSelectedPage={setSelectedPage}
                         />

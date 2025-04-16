@@ -1,11 +1,15 @@
 
 
-import { useEffect, useState } from "react"
+import {React ,useEffect, useState, Suspense } from "react"
 import Navbar from "./components/Navbar"
 
 import {SelectedPage} from "./shared/types"
+import Home from "./pages/Home"
+
+
 
 const SQgym = () => {
+  
     const [selectedPage, setSelectedPage] = useState<SelectedPage>(
         SelectedPage.Home
     )
@@ -30,7 +34,8 @@ const SQgym = () => {
         isTopOfPage={isTopOfPage} 
         selectedPage={selectedPage} 
         setSelectedPage={setSelectedPage}
-         />
+        />
+        <Home setSelectedPage={setSelectedPage}/>
     </div>
   )
 }
