@@ -1,18 +1,18 @@
 
 import React from "react"
-import useMediaQuery from "../hooks/useMediaQuery"
-import ActionButton from "../shared/ActionButton"
-import { SelectedPage } from "../shared/types"
+import useMediaQuery from "../../hooks/useMediaQuery"
+import ActionButton from "../../shared/ActionButton"
+import { SelectedPage } from "../../shared/types"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import {motion} from "framer-motion"
 
 // images
 
-import PrettyLift from "../imgs/prettylift.jpg"
-import Beijing from "../imgs/beijing.jpg"
-import BMW from "../imgs/bmw.jpg"
-import Veritas from"../imgs/veritas.jpg"
-import Slack from "../imgs/slack.jpg"
+import PrettyLift from "../../imgs/prettylift.jpg"
+import Beijing from "../../imgs/beijing.jpg"
+import BMW from "../../imgs/bmw.jpg"
+import Veritas from"../../imgs/veritas.jpg"
+import Slack from "../../imgs/slack.jpg"
 
 
 

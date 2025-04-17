@@ -7,8 +7,11 @@ import {SelectedPage} from "./shared/types"
 
 //pages 
 
-import Home from "./pages/Home"
+import Home from "./pages/HomePage/Home"
 import Benefits from "./pages/BenefitPage/Benefits"
+import Classes from "./pages/ClassesPage/Classes"
+import Contact from "./pages/ContactPage/Contact"
+import Footer from "./pages/FooterPage/Footer"
 
 
 const SQgym = () => {
@@ -40,6 +43,9 @@ const SQgym = () => {
         />
         <Home setSelectedPage={setSelectedPage}/>
         <Benefits setSelectedPage={setSelectedPage} />
+        <Classes setSelectedPage={setSelectedPage} />
+        <Contact  setSelectedPage={setSelectedPage}/>
+        <Footer />
     </div>
   )
 }

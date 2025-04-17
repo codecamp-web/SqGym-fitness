@@ -29,7 +29,9 @@ const Benefits = ({setSelectedPage} : Props) => {
   return (
     <section id='benefits' className='mx-auto min-h-full w-5/6 py-20'>
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
+
             {/* Title */}
+
             <div className='md:my-5 md:w-3/5'>
                 <Hprop> more than just the body</Hprop>
                 <p className='text-sm my-5'>We provide the best and latest fitness equipment possible, trainers
@@ -37,7 +39,9 @@ const Benefits = ({setSelectedPage} : Props) => {
                     ease. Like a family
                 </p>
             </div>
+
             {/* Subtitle */}
+
             <motion.div 
             initial="hidden" whileInView="visible" viewport={{once: true, amount:0.5}}
             variants={container}
@@ -52,6 +56,7 @@ const Benefits = ({setSelectedPage} : Props) => {
             </motion.div>
 
             {/* Another Rep */}
+
             <div className='mt-16 items-center justify-between gap-20 md:mt-28 md:flex'>
                 <img src={s3xyImg} alt="graphic-yoga" className='md:w-2/4 mx-auto'/>
 
@@ -90,7 +95,7 @@ you can do. It comes from overcoming the things you thought you couldn’t."
 
                         </p>
                     </motion.div>
-                    <div className='mt-16'>
+                    <div className='mt-10'>
                         <ActionButton setSelectedPage={setSelectedPage}>
                             Join Now
                         </ActionButton>
