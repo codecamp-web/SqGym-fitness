@@ -7,3 +7,8 @@ export enum SelectedPage {
     ContactUs = "contactus"
 }
 
+export interface BenefitsType {
+    icon: React.ElementType
+    title: string
+    description: string
+}

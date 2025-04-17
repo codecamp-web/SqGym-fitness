@@ -1,11 +1,14 @@
 
 
-import {React ,useEffect, useState, Suspense } from "react"
+import {React, useEffect, useState } from "react"
 import Navbar from "./components/Navbar"
 
 import {SelectedPage} from "./shared/types"
-import Home from "./pages/Home"
 
+//pages 
+
+import Home from "./pages/Home"
+import Benefits from "./pages/BenefitPage/Benefits"
 
 
 const SQgym = () => {
@@ -36,6 +39,7 @@ const SQgym = () => {
         setSelectedPage={setSelectedPage}
         />
         <Home setSelectedPage={setSelectedPage}/>
+        <Benefits setSelectedPage={setSelectedPage} />
     </div>
   )
 }
